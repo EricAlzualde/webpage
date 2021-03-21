@@ -1,0 +1,29 @@
+.icon-base {
+    display: inline-block;
+    background: #fff;
+    padding-top: 1.8rem;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 9rem;
+}
+
+a.disabled {
+    color: gray;
+    pointer-events: none;
+}
+
+.logos-img {
+    filter: grayscale(1);
+}
+
+.logos-img:hover {
+    animation-name: gtc;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* GRAY TO COLOR ANIMATION */
+@keyframes gtc {
+    from {filter: grayscale(1);}
+    to {filter: none;}
+}
