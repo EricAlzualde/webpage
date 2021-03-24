@@ -1,3 +1,8 @@
+.page-header {
+    margin-top: 7rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .icon-base {
     display: inline-block;
     background: #fff;
@@ -20,6 +25,10 @@ a.disabled {
     animation-name: gtc;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+}
+
+.principal {
+    height: 6rem;
 }
 
 /* GRAY TO COLOR ANIMATION */
