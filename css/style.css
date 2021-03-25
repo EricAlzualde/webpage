@@ -3,6 +3,36 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.ventajas {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    line-height: 2.25rem;
+}
+
+.ventajas p, ul {
+    font-weight: 400;
+}
+
+.ventajas li {
+    background-image: url("../imgs/ventaja.png");
+    background-repeat: no-repeat;
+    text-indent: 1.25rem;
+    background-position-y: 0.6rem;
+}
+
+.beneficios {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.beneficios h2 {
+    font-weight: 200;
+}
+
+.modulos .header {
+    width: 50%;
+    margin-bottom: 3rem;
+}
+
 .icon-base {
     display: inline-block;
     background: #fff;
@@ -27,6 +57,14 @@ a.disabled {
     animation-fill-mode: forwards;
 }
 
+.funciones{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.funciones p {
+    font-weight: 100;
+}
+
 .principal {
     height: 6rem;
 }
@@ -35,4 +73,19 @@ a.disabled {
 @keyframes gtc {
     from {filter: grayscale(1);}
     to {filter: none;}
+}
+
+.contactanos {
+    margin-bottom: 2rem;
+}
+
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    position: absolute;
+}
+
+.footer-icons {
+    position: relative;
 }
