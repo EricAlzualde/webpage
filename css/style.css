@@ -3,21 +3,25 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.ventajas {
+.diferencias {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     line-height: 2.25rem;
 }
 
-.ventajas p, ul {
+.diferencias p, ul {
     font-weight: 400;
 }
 
-.ventajas li {
+.diferencias li {
     background-image: url("../imgs/ventaja.png");
     background-repeat: no-repeat;
     text-indent: 1.25rem;
     background-position-y: 0.6rem;
+}
+
+.ventajas {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .beneficios {
