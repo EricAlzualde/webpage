@@ -1,170 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>STRIX POS</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Navbar fixed top -->
-    <nav
-      class="justify-content-end bg-light navbar fixed-top navbar-expand-md navbar-light border shadow-sm pb-2"
-    >
-      <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#myNav3"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a href="#" class="navbar-brand">
-          <img src="imgs/Brand_logo.png" alt="Brand_logo" />
-          <span class="fs-3">STRIX POS</span>
-        </a>
-        <div class="collapse justify-content-end navbar-collapse" id="myNav3">
-          <ul class="navbar-nav mt-2 text-center text-md-start fs-5">
-            <li class="nav-item">
-              <a href="#" class="nav-link">Inicio</a>
-              <hr class="d-block d-md-none" />
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Funciones</a>
-              <hr class="d-block d-md-none" />
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Contacto</a>
-              <hr class="d-block d-md-none" />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <header class="page-header">
-      <div class="container-fluid bg-success">
-        <div class="container text-center text-light">
-          <h1 class="display-1 my-5 pt-3">Funciones</h1>
-        </div>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STRIX POS</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
+    rel="stylesheet" />
+</head>
 
-    <div class="container text-center">
-      <div class="btn-group bg-success border rounded-pill" role="group">
-        <button
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#PDV"
-          class="btn btn-success rounded-pill"
-        >
-          PDV
-        </button>
-        <button
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#Almacen"
-          class="btn btn-success"
-        >
-          Almacén
-        </button>
-        <button
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#Administracion"
-          class="btn btn-success"
-        >
-          Administración
-        </button>
-        <button
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#Finanzas"
-          class="btn btn-success"
-        >
-          Finanzas
-        </button>
-        <button
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#Configuracion"
-          class="btn btn-success rounded-pill"
-        >
-          Configuración
-        </button>
-      </div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, sunt!
-      </p>
-
-      <div class="collapse" id="PDV">
-        <div class="card card-body">
-            <h1 class="display-2">PDV</h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus, vero. Unde facilis, soluta error quidem fugit itaque
-          natus fuga rem?
-        </div>
-      </div>
-      <div class="collapse" id="Almacen">
-        <div class="card card-body">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ipsum veniam iure eaque ad quod culpa inventore laudantium. Asperiores quas esse similique repudiandae ex quibusdam nam, placeat necessitatibus est at velit magnam sunt fugit! Repellat qui, excepturi reprehenderit illum cupiditate perspiciatis distinctio asperiores soluta provident, earum recusandae, consectetur impedit incidunt!
-        </div>        
-      </div>
-
-      <div class="collapse" id="Administracion">
-            <div class="card card-body">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ipsum veniam iure eaque ad quod culpa inventore laudantium. Asperiores quas esse similique repudiandae ex quibusdam nam, placeat necessitatibus est at velit magnam sunt fugit! Repellat qui, excepturi reprehenderit illum cupiditate perspiciatis distinctio asperiores soluta provident, earum recusandae, consectetur impedit incidunt!
-            </div>
-      </div>
-
-      <div class="collapse" id="Finanzas">
-            <div class="card card-body">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ipsum veniam iure eaque ad quod culpa inventore laudantium. Asperiores quas esse similique repudiandae ex quibusdam nam, placeat necessitatibus est at velit magnam sunt fugit! Repellat qui, excepturi reprehenderit illum cupiditate perspiciatis distinctio asperiores soluta provident, earum recusandae, consectetur impedit incidunt!
-            </div>
-      </div>
-
-      <div class="collapse" id="Configuracion">
-            <div class="card card-body">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ipsum veniam iure eaque ad quod culpa inventore laudantium. Asperiores quas esse similique repudiandae ex quibusdam nam, placeat necessitatibus est at velit magnam sunt fugit! Repellat qui, excepturi reprehenderit illum cupiditate perspiciatis distinctio asperiores soluta provident, earum recusandae, consectetur impedit incidunt!
-            </div>
+<body>
+  <!-- Navbar fixed top -->
+  <nav class="justify-content-end fixed-top bg-success navbar navbar-expand-md navbar-dark shadow-sm">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav3">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="navbar-brand">
+        <img src="imgs/Brand_logo.png" alt="Brand_logo" />
+        <span class="fs-3">STRIX POS</span>
+      </a>
+      <div class="collapse justify-content-end navbar-collapse" id="myNav3">
+        <ul class="navbar-nav mt-2 text-center text-md-start fs-5">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <hr class="d-block d-md-none" />
+          </li>
+          <li class="nav-item">
+            <a href="caracteristicas.html" class="nav-link disabled">Módulos</a>
+            <hr class="d-block d-md-none" />
+          </li>
+          <li class="nav-item">
+            <a href="contactos.html" class="nav-link">Contacto</a>
+            <hr class="d-block d-md-none" />
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <!-- /.contactanos -->
-    <footer class="bg-success">
-      <div class="container text-center text-light">
-        <p class="me-auto mb-0">
-          COPYRIGHT © STRIX Technologies 2021
-          <i class="mx-1 fab fa-hotjar"></i>
-          <i class="mx-1 fab fa-gitkraken"></i>
-          <i class="mx-1 fab fa-facebook"></i>
-          <i class="mx-1 fab fa-instagram"></i>
+  <header class="page-header">
+    <div class="container-fluid">
+      <div class="container text-center">
+
+        <h1 class="display-1 pt-3">
+          <i class="fas fa-project-diagram"></i>
+          Módulos
+        </h1>
+        <p>
+          Todas las actividades de gestión que puedes realizar usando
+          la aplicación Strix POS a
+          través de estos 5 módulos:
         </p>
       </div>
-    </footer>
+    </div>
+  </header>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/763ddbc7c4.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Navbar sticky sobre las funciones -->
+  <!-- Scrollspy (todavia no funciona) -->
+  <nav class="text-center bg-success navbar navbar-expand-md navbar-dark shadow-lg pb-2 fs-5">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navspy">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse justify-content-center navbar-collapse" id="Navspy">
+        <ul class="navbar-nav text-center text-md-start fs-5">
+          <li class="nav-item">
+            <a href="#PDV" class="btn btn-success" role="button">
+              <i class="fas fa-desktop me-2"></i>
+              PDV
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#Almacen" class="btn btn-success" role="button">
+              <i class="fas fa-box me-2"></i>
+              Almacén
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#Administracion" class="btn btn-success" role="button">
+              <i class="fas fa-store-alt me-2"></i>
+              Administración
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#Finanzas" class="btn btn-success" role="button">
+              <i class="fas fa-user me-2"></i>
+              Finanzas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#Configuracion" class="btn btn-success" role="button">
+              <i class="fas fa-cog me-2"></i>
+              Configuración
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid bg-success" data-bs-spy="scroll" data-bs-target="#Navspy" data-bs-offset="0" tabindex="0">
+    <div class="container p-3 border border-success" id="modulos">
+      <!-- Todo el contenido -->
+      <section class="mb-5">
+        <!-- Contenido del módulo PDV -->
+        <div class="card card-body mb-2" id="PDV">
+          <h4 class="display-4 text-center pb-0 text-start">
+            <i class="fas fa-desktop me-3"></i>
+            PDV
+          </h4>
+          <hr class="pt-0" />
+          <p class="text-center">
+            Todo lo relacionado con el proceso de facturación, creando un
+            registro sobre las devoluciones, incluso creando un cierre de
+            manera automática al momento que se hace la primera factura.
+          </p>
+          <div class="row text-center g-2">
+            <div class="col-md-4">
+              <div class="container border rounded">
+                <i class="fas fa-file-invoice-dollar fa-4x text-warning"></i>
+                <h4>Facturación</h4>
+                <p>
+                  Realizar facturas con diferentes métodos de pago, incluso
+                  sin conexión
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="container border rounded">
+                <i class="fas fa-shopping-cart fa-4x text-success"></i>
+                <h4>Ventas</h4>
+                <p>
+                  Cada factura que hagas es reflejada aquí, con la
+                  posibilidad de realizar una devolución o también,
+                  reembolsar la factura
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="container border rounded">
+                <span class="fa-stack fa-3x text-primary">
+                  <i class="fas fa-hand-holding fa-stack-2x"></i>
+                  <i class="fas fa-box fa-stack-1x"></i>
+                </span>
+                <h4>Devoluciones</h4>
+                <p>
+                  En el caso de ser necesario el hacer devoluciones, el
+                  sistema registra los detalles relacionados al momento de
+                  hacerla
+                </p>
+              </div>
+            </div>
+            <div class="offset-md-2 col-md-4">
+              <div class="container border rounded">
+                <i class="fas fa-cash-register fa-4x text-success"></i>
+                <h4>Cierres</h4>
+                <p>
+                  STRIX POS se encarga de hacer un conteo automatico de las
+                  ganancias que hubo hasta el momento, sin embargo,
+                  puedes hacer un conteo manual en caso de que no estés
+                  seguro.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="container border rounded">
+                <i class="fas fa-coins fa-4x text-warning"></i>
+                <h4>Retiros y Vueltos</h4>
+                <p>
+                  Al momento de tener que hacer un retiro de caja debido a
+                  que el cliente no posee cambio, queda registrado aquí
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenido del módulo de Almacén -->
+        <div class="mb-2">
+          <div class="card card-body">
+            <!-- Título -->
+            <h4 class="display-4 pb-0 text-center" id="Almacen">
+              <i class="fas fa-box me-3"></i>
+              Almacén
+            </h4>
+            <hr class="pt-0" />
+            <p class="text-center">
+              Este módulo te permite ver que productos tienes registrados en
+              el sistema, revisar cuantas existencias quedan de cada uno, y la
+              posibilidad de transferir productos entre varios almacenes en
+              caso de tenerlos, especificando si en el almacén destino, pueden
+              ser vendidas las existencias transferidas
+            </p>
+            <!-- Row con las funciones -->
+            <div class="row text-center g-2">
+              <div class="col-md-4 offset-md-2">
+                <div class="container border rounded">
+                  <i class="fas fa-box fa-4x text-wood"></i>
+                  <h4>Almacén</h4>
+                  <p>
+                    Muestra el inventario actual de los productos sin importar
+                    en que almacén se encuentre ubicado, si alguno fue
+                    reservado y las transferencias que se han hecho (ambas
+                    operaciones)
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-shopping-bag fa-4x text-danger"></i>
+                  <h4>Productos</h4>
+                  <p>
+                    Aquí podras ver todos los productos que están registrados
+                    en el sistema, pudiendo añadir más en el caso de que
+                    adquieras otro tipo de mercancía, ver las categorias de
+                    productos y sus subcategorías.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenido del módulo de Administración -->
+        <div class="mb-2">
+          <div class="card card-body">
+            <p class="display-4 pb-0 text-center" id="Administracion">
+              <i class="fas fa-store-alt me-3"></i>
+              Administración
+            </p>
+            <hr class="pt-0" />
+            <p class="text-center">
+              Crea ordenes de compra a tus proveedores, obten resumenes
+              automáticos en un rango de fechas colocado, actualiza los
+              precios de tus productos, ve la historia de ventas y compras de
+              tus productos, detalla los anteriores cierres, añade o edita
+              proveedores y clientes.
+            </p>
+
+            <div class="row text-center g-2">
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-shopping-bag fa-4x text-danger"></i>
+                  <h4>Compras</h4>
+                  <p>
+                    Realiza órdenes de compra a los proveedores que tengas
+                    registrados, agrega productos a la orden y esta al ser
+                    aprobada sumará todo al inventario de manera automática
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-hand-holding-usd fa-4x text-warning"></i>
+                  <h4>Ventas</h4>
+                  <p>
+                    Las facturas realizadas en PDV se mostrarán en esta
+                    pantalla, pudiendo ver los detalles si se desea, al igual
+                    que ver un resumen del monto, de las unidades y de las
+                    operaciones, todo esto dentro un rango de tiempo que puede
+                    ser especificado
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-dollar-sign fa-4x text-success"></i>
+                  <h4>Precios</h4>
+                  <p>
+                    Aquí podras ver el precio que tiene cada producto,
+                    pudiendo editarlo, quedando guardado en un
+                    histórico de precios con los anteriores cambios y que
+                    usuario lo realizó
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-history fa-4x"></i>
+                  <h4>Histórico</h4>
+                  <p>
+                    A diferencia de los demás históricos, este muestra las
+                    ultimas ventas y compras que fueron hechas de los
+                    productos, mostrando las existencias actuales y las
+                    vendidas
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <span class="fa-stack fa-2x text-secondary">
+                    <i class="fas fa-undo-alt fa-stack-2x"></i>
+                    <i class="fas fa-cash-register fa-stack-1x"></i>
+                  </span>
+                  <h4>Totales Cierres</h4>
+                  <p>Obtén un listado con todos los cierres anteriores</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-truck fa-4x"></i>
+                  <h4>Proveedores</h4>
+                  <p>
+                    Muestra una lista de todos los proveedores registrados,
+                    pudiendo añadir nuevos, editar los ya existentes o incluso
+                    eliminarlos
+                  </p>
+                </div>
+              </div>
+              <div class="offset-md-2 col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-id-card fa-4x text-primary"></i>
+                  <h4>Clientes</h4>
+                  <p>
+                    Los clientes que se tengan registrados, sea genérico, o sea
+                    una compañia se mostrarán aquí, teniendo la opción de
+                    editarlos, eliminarlos o crear uno nuevo
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-money-bill-wave fa-4x text-warning"></i>
+                  <h4>Créditos</h4>
+                  <p>
+                    Todas las deudas que tengan los clientes contigo se
+                    mostrarán aquí, cada pago que se realice quedará reflejado
+                    igualmente en esta pantalla
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenido del módulo de Finanzas -->
+        <div class="mb-2">
+          <div class="card card-body">
+            <p class="display-4 pb-0 text-center" id="Finanzas">
+              <i class="fas fa-user me-3"></i>
+              Finanzas
+            </p>
+            <hr class="pt-0" />
+            <p class="text-center">
+              Todo lo relacionado con los montos a crédito o a débito,
+              registrando tambien los pagos realizados de los clientes
+              para pagar las deudas que poseen contigo.
+            </p>
+            <div class="row text-center g-2">
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-dollar-sign fa-4x text-success"></i>
+                  <h4>Pagos</h4>
+                  <p>
+                    Los montos que fueron recibidos de los clientes para pagar
+                    las compras a crédito, se mostrarán en este submódulo
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-receipt fa-4x"></i>
+                  <h4>Nota de Crédito</h4>
+                  <p>
+                    Creación manual y automática de notas por devolucion de producto
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <span class="fa-stack fa-3x text-primary">
+                    <i class="fas fa-hand-holding fa-stack-2x"></i>
+                    <i class="fas fa-box fa-stack-1x"></i>
+                  </span>
+                  <h4>Devoluciones</h4>
+                  <p>
+                    Sencilla administración de las devoluciones realizadas con su estado de aprobación
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenido del módulo de Configuración -->
+        <div class="mb-2">
+          <div class="card card-body">
+            <p class="display-4 pb-0 text-center" id="Configuracion">
+              <i class="fas fa-cog me-3"></i>
+              Configuración
+            </p>
+            <hr class="pt-0" />
+            <p class="text-center">
+              Configura diferentes aspectos del sistema, añade impresoras, nuevos categorias sobre los productos,
+              monedas, denominaciones y almacenes. Cambia los detalles de tu empresa y administra a los usuarios que
+              usan el sistema.
+            </p>
+            <div class="row text-center g-2">
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-shopping-bag fa-4x text-danger"></i>
+                  <h4>Productos</h4>
+                  <p>Añadir nuevas categorias y subcategorías de los productos</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-user fa-4x text-primary"></i>
+                  <h4>Finanzas</h4>
+                  <p>
+                    Añade monedas y su tasa de cambio, denominaciones para el
+                    conteo de efectivo, bancos, impuestos, tipos de pago e
+                    incluso los tipos de notas
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-store-alt fa-4x text-warning"></i>
+                  <h4>Administración</h4>
+                  <p class="text-center">
+                    Añade tipos de precios que serán aplicados a los clientes,
+                    edita los detalles de tu compañia.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-user-cog fa-4x text-secondary"></i>
+                  <h4>Usuarios</h4>
+                  <p>
+                    Observa un listado de los usuarios y el rol que ejercen en
+                    el sistema. Puedes cambiar todos los datos relacionados con
+                    el mismo, eliminarlo, o crear un nuevo usuario.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-box fa-4x text-wood"></i>
+                  <h4>Almacén</h4>
+                  <p>
+                    Añade almacenes, los cuales guardaran tus productos,
+                    incluyendo el tipo de entrada a los mismos.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-cash-register fa-4x text-success"></i>
+                  <h4>Cajas</h4>
+                  <p>
+                    Aquí apareceran todas las cajas que posea tu negocio,
+                    cada una teniendo un codigo que le identifica, tienes
+                    la opción de editar una ya existente o añadir otra.
+                  </p>
+                </div>
+              </div>
+              <div class="offset-md-4 col-md-4">
+                <div class="container border rounded">
+                  <i class="fas fa-print fa-4x"></i>
+                  <h4>Impresoras</h4>
+                  <p>
+                    Se mostraran en un listado todas las impresoras que estén conectadas al
+                    sistema, detalles identificatorios de la misma, incluyendo también, al usuario encargado.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Seccion Contactanos -->
+  <section class="contactanos">
+    <div class="container col-8 border border-success text-center shadow p-4">
+      <h2>Contacto</h2>
+      <p class="lead">
+        Puedes ponerte en contacto con nosotros y responderemos tus preguntas
+        acerca de POS en el menor tiempo posible
+      </p>
+      <div class="row g-2 pb-3">
+        <div class="col-md-4">
+          <div class="card border-0">
+            <div class="card-body">
+              <i class="fas fa-envelope fa-3x mb-4 text-primary"></i>
+              <h4>Correo</h4>
+              <p class="lead">anibal@strix.com.ve</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0">
+            <div class="card-body">
+              <i class="fas fa-map-marked-alt fa-3x mb-4 text-success"></i>
+              <h4>Dirección</h4>
+              <p class="lead">
+                1<sup>ra</sup> Av. de los Palos Grandes con Av. Fco. de Miranda, Edif Quinora Torre A piso
+                1, Ofic
+                15-A
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0">
+            <div class="card-body">
+              <i class="fas fa-phone fa-3x mb-4"></i>
+              <h4>Teléfono</h4>
+              <p class="lead">+58 212-285-6661</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.contactanos -->
+
+  <!-- Footer -->
+  <footer class="bg-success mt-5">
+    <div class="container text-center text-light">
+      <p class="footer-text">
+        COPYRIGHT © STRIX Technologies 2021
+        <i class="mx-1 fab fa-hotjar"></i>
+        <i class="mx-1 fab fa-gitkraken"></i>
+        <i class="mx-1 fab fa-facebook"></i>
+        <i class="mx-1 fab fa-instagram"></i>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/763ddbc7c4.js" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19"
+    crossorigin="anonymous"></script>
+
+  <script>
+    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: '#navbar-example'
+    })
+  </script>
+</body>
+
 </html>

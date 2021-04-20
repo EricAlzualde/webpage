@@ -1,628 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>STRIX POS</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- 1st Navbar Fixed top -->
-    <nav
-      class="justify-content-end bg-light navbar fixed-top navbar-expand-md navbar-light border shadow-sm pb-2"
-    >
-      <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#myNav3"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a href="#" class="navbar-brand">
-          <img src="imgs/Brand_logo.png" alt="Brand_logo" />
-          <span class="fs-3">STRIX POS</span>
-        </a>
-        <div class="collapse justify-content-end navbar-collapse" id="myNav3">
-          <ul class="navbar-nav mt-2 text-center text-md-start fs-5">
-            <li class="nav-item">
-              <a href="#" class="nav-link">Inicio</a>
-              <hr class="d-block d-md-none" />
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Funciones</a>
-              <hr class="d-block d-md-none" />
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Contacto</a>
-              <hr class="d-block d-md-none" />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <header class="page-header">
-      <div class="container-fluid bg-success">
-        <div class="container p-4 text-light">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-md-5 mt-5">
-              <h1 class="display-1">POS</h1>
-              <p class="ms-2 lead mb-5">
-                POS es un sistema de punto de venta con la capacidad de
-                gestionar diferentes aspectos de tu negocio
-              </p>
-              <a
-                href="caracteristicas.html"
-                class="btn btn-lg btn-outline-light"
-                >Saber más</a
-              >
-              <a href="#" class="btn btn-lg btn-outline-warning">Ver Video</a>
-            </div>
-            <div class="col-md-7 d-none d-md-inline">
-              <div
-                id="carouselPOS"
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#carouselPOS"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselPOS"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselPOS"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                  ></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="imgs/pos.webp" class="img-fluid d-block" />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="imgs/pos_app/Screenshot_1.png"
-                      class="img-fluid d-block rounded"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="imgs/pos_app/Screenshot_2.png"
-                      class="img-fluid d-block rounded"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#198754"
-          fill-opacity="1"
-          d="M0,192L48,181.3C96,171,192,149,288,154.7C384,160,480,192,576,181.3C672,171,768,117,864,85.3C960,53,1056,43,1152,58.7C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-        ></path>
-      </svg>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STRIX POS</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
+    rel="stylesheet" />
+</head>
 
-    <section class="diferencias">
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-6">
-            <img src="imgs/cashier.jpg" alt="Cajero" class="img-fluid" />
-          </div>
-          <div class="col-md-6">
-            <div class="container">
-              <h2 class="display-4 text-center text-md-start text-success">
-                Pequeñas grandes diferencias
-              </h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-                provident tempora est, exercitationem nostrum cumque velit
-                incidunt ea magnam nobis.
-              </p>
-              <ul class="list-unstyled">
-                <li>
-                  Intuitiva aplicación para el listado y gestión de las
-                  actividades economicas realizadas
-                </li>
-                <li>
-                  Facilita el gestionamiento del inventario, incluso si se
-                  poseen varios almacenes
-                </li>
-                <li>
-                  Exportado de reportes, facturas y listados de productos con
-                  tan solo dar un click
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+<body>
+  <!-- 1st Navbar Fixed top -->
+  <nav class="justify-content-end bg-success navbar fixed-top shadow navbar-expand-md navbar-dark shadow-sm pb-2">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav3">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="navbar-brand">
+        <img src="imgs/Brand_logo.png" alt="Brand_logo" />
+        <span class="fs-3">STRIX POS</span>
+      </a>
+      <div class="collapse justify-content-end navbar-collapse" id="myNav3">
+        <ul class="navbar-nav mt-2 text-center text-md-start fs-5">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link disabled">Inicio</a>
+            <hr class="d-block d-md-none" />
+          </li>
+          <li class="nav-item">
+            <a href="caracteristicas.html" class="nav-link">Módulos</a>
+            <hr class="d-block d-md-none" />
+          </li>
+          <li class="nav-item">
+            <a href="contactos.html" class="nav-link">Contacto</a>
+            <hr class="d-block d-md-none" />
+          </li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </nav>
 
-    <section class="ventajas bg-success">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,128L48,112C96,96,192,64,288,90.7C384,117,480,203,576,213.3C672,224,768,160,864,144C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-        ></path>
-      </svg>
-      <h2 class="display-4 text-center text-light">
-        ¿Que ventajas te da esta aplicación?
-      </h2>
-      <div class="container p-5">
-        <div class="row g-2">
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-1 me-5">
-                <i class="fas fa-cog fa-6x text-light"></i>
-              </div>
-              <!-- /.col-md-6 -->
-              <div class="col-md-8">
-                <div class="ps-4 text-light">
-                  <h4>
-                    <i class="fas fa-chevron-right"></i>
-                    Eficiencia
-                  </h4>
-                  <p>
-                    Gracias a las funciones que posee el sistema, realizar las
-                    operaciones contables es mucho más rápido
-                  </p>
-                  <hr />
-                </div>
-              </div>
-              <!-- /.col-md-6 -->
-            </div>
-            <!-- /.row -->
+  <header class="page-header">
+    <div class="container-fluid pt-2 bg-success">
+      <div class="container p-4 text-light">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-5 mt-5">
+            <h1 class="display-1">POS</h1>
+            <p class="ms-2 lead mb-5">
+              STRIX POS es un sistema de punto de venta con la capacidad de
+              gestionar diferentes aspectos de tu negocio
+            </p>
+            <a href="caracteristicas.html" class="btn btn-lg btn-outline-light">Saber más</a>
+            <a href="#" class="btn btn-lg btn-outline-warning">Ver Video</a>
           </div>
-          <span class="w-100"></span>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-1 me-5 justify-content-center">
-                <i class="fas fa-puzzle-piece fa-6x text-light"></i>
+          <div class="col-md-7 d-none d-md-inline">
+            <div id="carouselPOS" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselPOS" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
-              <div class="col-md-8">
-                <div class="ps-4 text-light">
-                  <h4><i class="fas fa-chevron-right"></i> Sencillez</h4>
-                  <p>
-                    La interfaz del sistema está diseñada para que usuarios de
-                    cualquier rol puedan entenderlo y esto permita explotar el
-                    funcionamiento del mismo al máximo
-                  </p>
-                  <hr />
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/pos.webp" class="img-fluid d-block" />
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/pos_app/Screenshot_1.png" class="img-fluid d-block rounded" />
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/pos_app/Screenshot_2.png" class="img-fluid d-block rounded" />
                 </div>
               </div>
             </div>
           </div>
-          <span class="w-100"></span>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-1 me-5 justify-content-center">
-                <i class="fas fa-desktop fa-6x text-light"></i>
-              </div>
-              <div class="col-md-8 text-light">
-                <div class="ps-4">
-                  <h4><i class="fas fa-chevron-right"></i> Trabajo remoto</h4>
-                  <p>
-                    No poder ir a trabajar fue uno de los grandes problemas de
-                    este año, sin embargo STRIX POS permite a los trabajadores
-                    realizar los registros correspondientes de manera online
-                  </p>
-                  <hr />
-                </div>
-              </div>
-            </div>
-          </div>
-          <span class="w-100"></span>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-1 me-5">
-                <i class="fas fa-coins fa-6x text-light"></i>
-              </div>
-              <div class="col-md-8">
-                <div class="ps-4 text-light">
-                  <h4><i class="fas fa-chevron-right"></i> Multimoneda</h4>
-                  <p>
-                    POS te permite el trabajar con más de una moneda, con tasas
-                    de cambios que puedes modificar, reflejando el cambio hecho
-                    en todo el sistema
-                  </p>
-                  <hr />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,128L60,122.7C120,117,240,107,360,117.3C480,128,600,160,720,165.3C840,171,960,149,1080,144C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- /.ventajas -->
-
-    <!-- LOGOS -->
-    <div class="container text-center">
-      <p class="h4">
-        Ya hay empresas usando esta aplicación ¿Qué estas esperando?
-      </p>
-      <div class="row align-items-center">
-        <div class="col-6 col-md-3 my-2 logos-img">
-          <img
-            class="img-fluid"
-            src="imgs/Google-Drive-Logo.png"
-            alt="Drive_Logo"
-          />
-        </div>
-        <div class="col-6 col-md-3 my-2 logos-img">
-          <img class="img-fluid" src="imgs/Lorem_logo.png" alt="Drive_Logo" />
-        </div>
-        <div class="col-6 col-md-3 my-2 logos-img">
-          <img class="img-fluid" src="imgs/Lorem_logo.png" alt="Drive_Logo" />
-        </div>
-        <div class="col-6 col-md-3 my-2 logos-img">
-          <img
-            class="img-fluid"
-            src="imgs/Google-Drive-Logo.png"
-            alt="Drive_Logo"
-          />
         </div>
       </div>
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#198754" fill-opacity="1"
+        d="M0,192L48,181.3C96,171,192,149,288,154.7C384,160,480,192,576,181.3C672,171,768,117,864,85.3C960,53,1056,43,1152,58.7C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+      </path>
+    </svg>
+  </header>
 
-    <!-- Modulos -->
-    <section class="modulos bg-success">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,96L60,117.3C120,139,240,181,360,208C480,235,600,245,720,229.3C840,213,960,171,1080,165.3C1200,160,1320,192,1380,208L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-        ></path>
-      </svg>
-      <div class="container-fluid text-light">
-        <div class="container text-center header">
-          <h2 class="display-2">Módulos</h2>
-          <h4>
-            STRIX POX Posee <strong>5 módulos</strong> referentes a las
-            actividades principales que se llevan a cabo en el negocio
-          </h4>
+  <section class="diferencias">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6">
+          <img src="imgs/cashier.jpg" alt="Cajero" class="img-fluid" />
         </div>
-        <div class="container-md text-center">
-          <div class="row">
-            <div class="col-md-4 align-self-center">
-              <div class="icon-base shadow-lg">
-                <i class="fas fa-desktop fa-5x text-success"></i>
-              </div>
-              <h3 class="my-4">PDV</h3>
-              <p>
-                El módulo PDV te permite realizar el proceso de facturado, con
-                la posibilidad de poder especificar pagos al contado o a
-                crédito. Además, el gestionar las ventas, los retiros de caja,
-                las devoluciones y los cierres
-              </p>
-            </div>
-            <div class="d-none d-md-block col-md-8">
-              <img
-                class="img-fluid rounded shadow"
-                src="imgs/pos_app/pdv.png"
-                alt="pdv"
-              />
-            </div>
-            <div class="col-md-3 mt-5">
-              <div class="icon-base shadow-lg">
-                <i class="fas fa-box fa-5x text-success"></i>
-              </div>
-              <h3 class="my-4">Almacén</h3>
-              <p>
-                ¿Has expandido tu negocio y necesitas añadir el nuevo almacen al
-                sistema? ¡No te preocupes! Con Strix POS puedes hacerlo sin
-                inconvenientes, crea diferentes almacenes para la administración
-                óptima del inventario, pudiendo hacer transferencias entre
-                ellos.
-              </p>
-            </div>
-            <div class="col-md-3 mt-5">
-              <div class="icon-base shadow-lg">
-                <i class="fas fa-store-alt fa-5x text-success"></i>
-              </div>
-              <h3 class="my-4">Administración</h3>
-              <p>
-                Teniendo el rol de administrador, gestiona a los usuarios que
-                tienen acceso al sistema, cambia sus roles, o incluso, crea
-                nuevos usuarios si tu negocio está en crecimiento
-              </p>
-            </div>
-            <div class="col-md-3 mt-5">
-              <div class="icon-base shadow-lg">
-                <i class="fas fa-user fa-5x text-success"></i>
-              </div>
-              <h3 class="my-4">Finanzas</h3>
-              <p>
-                El mundo cambia y las finanzas tambien, en este módulo puedes
-                cambiar la tasa de cambio, las denominaciones usadas en el
-                conteo de efectivo, añadir bancos, los cambios realizados
-                reflejarán al usuario que lo hizo
-              </p>
-            </div>
-            <div class="col-md-3 mt-5">
-              <div class="icon-base shadow-lg">
-                <i class="fas fa-cog fa-5x text-success"></i>
-              </div>
-              <h3 class="my-4">Configuración</h3>
-              <p>
-                ¿Necesitas hacer algún cambio en los datos de la empresa?,
-                ¡Hazlo!, las modificaciones que hagas las verás reflejadas en el
-                sistema de manera automática
-              </p>
-            </div>
-          </div>
-          <button class="btn btn-lg btn-outline-light px-4">Leer más</button>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,192L60,165.3C120,139,240,85,360,96C480,107,600,181,720,197.3C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- /.modulos -->
-
-    <section class="funciones">
-      <div class="container mb-5">
-        <h2 class="text-center display-2 mb-5">Funciones</h2>
-        <div class="row text-center text-sm-start g-3">
-          <div class="col-sm-6 col-md-3">
-            <div class="p-2 border text-center rounded shadow">
-              <span class="fa-stack mb-5 mt-2">
-                <i
-                  class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-success"
-                ></i>
-                <i
-                  class="stacked-icon stack-1 mt-3 fas fa-file-invoice-dollar fa-stack-2x text-success"
-                ></i>
-              </span>
-              <h4>Facturación</h4>
-              <p>
-                Crea, registra, lista y administra facturas de manera eficiente
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="p-2 text-center border rounded shadow">
-              <spa class="fa-stack mb-5 mt-2">
-                <i
-                  class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-warning"
-                ></i>
-                <i
-                  class="stacked-icon stack-1 mt-3 fas fa-dollar-sign text-warning"
-                ></i>
-              </spa>
-              <h4>Compras</h4>
-              <p>
-                Manten un registro de las compras de productos que hagas para tu
-                empresa o tienda
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="p-2 text-center border rounded shadow">
-              <span class="fa-stack mb-5 mt-2">
-                <i
-                  class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-warning"
-                ></i>
-                <i
-                  class="stacked-icon stack-1 mt-3 fas fa-boxes fa-stack-2x text-brown"
-                ></i>
-              </span>
-              <h4>Almacén</h4>
-              <p>
-                Agrega los almacenes que poseas y elige si el producto está a la
-                venta o no.
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="p-2 text-center border rounded shadow">
-              <span class="fa-stack mb-5 mt-2">
-                <i
-                  class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-warning"
-                ></i>
-                <i
-                  class="stacked-icon stack-1 mt-3 fas fa-clipboard-list fa-stack-2x"
-                ></i>
-              </span>
-
-              <h4>Inventario</h4>
-              <p>
-                Con el listado de productos puedes manejar las existencias de
-                una mejor manera
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="p-2 text-center border rounded shadow">
-              <span class="fa-stack mb-5 mt-2">
-                <i
-                  class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-success"
-                ></i>
-                <i
-                  class="stacked-icon stack-1 mt-3 fas fa-cash-register fa-stack-2x text-success"
-                ></i>
-              </span>
-              <h4>POS</h4>
-              <p>
-                Facturación en puntos de venta y gestionamiento de ventas,
-                devoluciones y retiros de caja
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="p-2 text-center border rounded shadow">
-              <span class="fa-stack mb-5 mt-2">
-                <i
-                  class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-danger"
-                ></i>
-                <i
-                  class="stacked-icon stack-1 mt-3 fas fa-chart-bar fa-stack-2x"
-                ></i>
-              </span>
-              <h4>Reportes</h4>
-              <p>
-                Genera reportes de manera sencilla para analizarlos, pudiendo
-                exportarlos para luego ser impresos
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="p-2 text-center border rounded shadow">
-              <span
-                class="fa-stack ms-4 justify-content-center align-items-center bg-5 mt-2 me-2 float-start"
-              >
-                <i
-                  class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-success"
-                ></i>
-                <i
-                  class="stacked-icon stack-1 mt-3 fas fa-file-excel text-success mb-2"
-                ></i>
-              </span>
-              <span class="fa-stack mb-5 bg-5 mt-2">
-                <i
-                  class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-danger"
-                ></i>
-                <i
-                  class="stacked-icon stack-1 mt-3 fas fa-file-pdf text-danger mb-2"
-                ></i>
-              </span>
-              <h4>Exportar datos</h4>
-              <p>
-                Exporta mayoria de reportes, notas fiscales o cierres de caja a
-                Excel o PDF, incluso listado de inventario
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="p-2 text-center border rounded shadow">
-              <span class="fa-stack mb-5 bg-5 mt-2 ms-4">
-                <i
-                  class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-success"
-                ></i>
-                <img
-                  class="stack-image mb-2 mt-3"
-                  src="imgs/cash-refund.png"
-                  alt="refund icon"
-                />
-              </span>
-
-              <h4>Devoluciones</h4>
-              <p>
-                Manten registros sobre las devoluciones de productos junto a la
-                razón de la devolución
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="text-center">
-          <button class="btn btn-lg btn-success my-4">Conoce más</button>
-        </div>
-      </div>
-    </section>
-    <!-- /.funciones -->
-
-    <!-- CONTÁCTANOS -->
-    <section class="contactanos">
-      <div class="container border border-success text-center shadow p-4">
-        <h2>Contact</h2>
-        <p class="lead">
-          Puedes ponerte en contacto con nosotros y responderemos tus preguntas
-          acerca de POS en el menor tiempo posible
-        </p>
-        <div class="row g-2 pb-3">
-          <div class="col-md-4">
-            <div class="card border-0">
-              <div class="card-body">
-                <i class="fas fa-envelope fa-3x mb-4 text-primary"></i>
-                <h4>Mail</h4>
-                <p class="lead">address@gmail.com</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card border-0">
-              <div class="card-body">
-                <i class="fas fa-map-marked-alt fa-3x mb-4 text-success"></i>
-                <h4>Address</h4>
-                <p class="lead">123 Main Street, New York, NY 10030</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card border-0">
-              <div class="card-body">
-                <i class="fas fa-phone fa-3x mb-4"></i>
-                <h4>Phone</h4>
-                <p class="lead">555-555-5555</p>
-              </div>
-            </div>
+        <div class="col-md-6">
+          <div class="container">
+            <h2 class="display-4 text-center text-md-start text-success">
+              Pequeñas grandes diferencias
+            </h2>
+            <p class="text-center text-md-start">
+              STRIX POS usa 5 módulos principales, de los cuales se desglosan en
+              diferentes funciones, brindando las herramientas necesarias para
+              realizar tu trabajo, incluso, de manera remota.
+            </p>
+            <ul class="list-unstyled">
+              <li>
+                Intuitiva aplicación para el listado y gestión de las
+                actividades económicas realizadas
+              </li>
+              <li>
+                Facilita la gestión del inventario, incluso si se
+                poseen varios almacenes
+              </li>
+              <li>
+                Exportado de reportes, facturas y listados de productos con
+                tan solo dar un click
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-    <!-- /.contactanos -->
+    </div>
+  </section>
 
-    <footer class="bg-success">
-      <div class="container text-center text-light">
-        <p class="me-auto mb-0">
-          COPYRIGHT © STRIX Technologies 2021
-          <i class="mx-1 fab fa-hotjar"></i>
-          <i class="mx-1 fab fa-gitkraken"></i>
-          <i class="mx-1 fab fa-facebook"></i>
-          <i class="mx-1 fab fa-instagram"></i>
-        </p>
+  <section class="ventajas bg-success">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,128L48,112C96,96,192,64,288,90.7C384,117,480,203,576,213.3C672,224,768,160,864,144C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+      </path>
+    </svg>
+    <h2 class="display-4 text-center text-light">
+      ¿Qué ventajas te da esta aplicación?
+    </h2>
+    <div class="container p-5 pb-0">
+      <div class="row text-light">
+        <div class="col-md-6">
+            <!-- Eficiencia -->
+            <div class="row mt-2">
+                <div class="col-lg-2 p-2 text-center text-md-start">
+                    <i class="fas fa-cog fa-5x"></i>
+                </div>
+                <div class="col-md-10 p-2">
+                    <i class="fas fa-chevron-right mt-2 float-start"></i>
+                    <h4>
+                        Eficiencia
+                    </h4>
+                    <p>
+                        Gracias a las funciones que posee el sistema, realizar las
+                        operaciones contables es mucho más rápido
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-lg-2">
+                    <i class="fas fa-puzzle-piece fa-5x"></i>
+                </div>
+                <div class="col-md-10">
+                    <i class="fas fa-chevron-right mt-2 float-start"></i>
+                    <h4>Sencillez</h4>
+                    <p>
+                        La interfaz del sistema está diseñada para que usuarios de
+                        cualquier rol puedan entenderlo y esto permita explotar el
+                        funcionamiento del mismo al máximo
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-lg-2">
+                    <i class="fas fa-desktop fa-5x"></i>
+                </div>
+                <div class="col-md-10">
+                    <i class="fas fa-chevron-right mt-2 float-start"></i>
+                    <h4>Trabajo remoto</h4>
+                    <p>
+                        No poder ir a trabajar fue uno de los grandes problemas de
+                        la pandemia, sin embargo, STRIX POS permite a los trabajadores
+                        realizar los registros correspondientes de manera online
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-lg-2">
+                    <i class="fas fa-coins fa-5x"></i>
+                </div>
+                <div class="col-md-10">
+                    <i class="fas fa-chevron-right mt-2 float-start"></i>
+                    <h4> Multimoneda</h4>
+                    <p>
+                        POS te permite el trabajar con más de una moneda, con tasas
+                        de cambios que puedes modificar, reflejando el cambio hecho
+                        en todo el sistema
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 justify-content-center">
+            <img id="img-ventajas" class="d-none d-lg-block img-fluid align-middle" src="imgs/working.jpg">
+        </div>
+    </div>
+      <!-- /.container -->
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,128L60,122.7C120,117,240,107,360,117.3C480,128,600,160,720,165.3C840,171,960,149,1080,144C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- /.ventajas -->
+
+  <!-- LOGOS -->
+  <div class="container text-center">
+    <p class="h4">
+      Ya hay empresas usando esta aplicación ¿Qué estas esperando?
+    </p>
+    <div class="row align-items-center">
+      <div class="col-6 col-md-3 my-2 logos-img">
+        <img class="img-fluid" src="imgs/Google-Drive-Logo.png" alt="Drive_Logo" />
       </div>
-    </footer>
+      <div class="col-6 col-md-3 my-2 logos-img">
+        <img class="img-fluid" src="imgs/Lorem_logo.png" alt="Drive_Logo" />
+      </div>
+      <div class="col-6 col-md-3 my-2 logos-img">
+        <img class="img-fluid" src="imgs/Lorem_logo.png" alt="Drive_Logo" />
+      </div>
+      <div class="col-6 col-md-3 my-2 logos-img">
+        <img class="img-fluid" src="imgs/Google-Drive-Logo.png" alt="Drive_Logo" />
+      </div>
+    </div>
+  </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/763ddbc7c4.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Modulos -->
+  <section class="modulos bg-success">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,96L60,117.3C120,139,240,181,360,208C480,235,600,245,720,229.3C840,213,960,171,1080,165.3C1200,160,1320,192,1380,208L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+      </path>
+    </svg>
+    <div class="container-fluid text-light">
+      <div class="container text-center header">
+        <h2 class="display-2">Módulos</h2>
+        <h4>
+          STRIX POX Posee <strong>5 módulos</strong> referentes a las
+          actividades principales que se llevan a cabo en el negocio
+        </h4>
+      </div>
+      <div class="container-md text-center">
+        <div class="row">
+          <div class="col-md-4 align-self-center">
+            <div class="icon-base shadow-lg">
+              <i class="fas fa-desktop fa-5x text-success"></i>
+            </div>
+            <h3 class="my-4">PDV</h3>
+            <p>
+              El módulo PDV te permite realizar el proceso de facturado, con
+              la posibilidad de poder especificar pagos al contado o a
+              crédito. Además, el gestionar las ventas, los retiros de caja,
+              las devoluciones y los cierres
+            </p>
+          </div>
+          <div class="d-none d-md-block col-md-8">
+            <img class="img-fluid rounded shadow" src="imgs/pos_app/pdv.png" alt="pdv" />
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="icon-base shadow-lg">
+              <i class="fas fa-box fa-5x text-success"></i>
+            </div>
+            <h3 class="my-4">Almacén</h3>
+            <p>
+              ¿Has expandido tu negocio y necesitas añadir el nuevo almacen al
+              sistema? ¡No te preocupes! Con Strix POS puedes hacerlo sin
+              inconvenientes, crea diferentes almacenes para la administración
+              óptima del inventario, pudiendo hacer transferencias entre
+              ellos.
+            </p>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="icon-base shadow-lg">
+              <i class="fas fa-store-alt fa-5x text-success"></i>
+            </div>
+            <h3 class="my-4">Administración</h3>
+            <p>
+              Teniendo el rol de administrador, gestiona a los usuarios que
+              tienen acceso al sistema, cambia sus roles, o incluso, crea
+              nuevos usuarios si tu negocio está en crecimiento
+            </p>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="icon-base shadow-lg">
+              <i class="fas fa-user fa-5x text-success"></i>
+            </div>
+            <h3 class="my-4">Finanzas</h3>
+            <p>
+              El mundo cambia y las finanzas tambien, en este módulo puedes
+              cambiar la tasa de cambio, las denominaciones usadas en el
+              conteo de efectivo, añadir bancos, los cambios realizados
+              reflejarán al usuario que lo hizo
+            </p>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="icon-base shadow-lg">
+              <i class="fas fa-cog fa-5x text-success"></i>
+            </div>
+            <h3 class="my-4">Configuración</h3>
+            <p>
+              ¿Necesitas hacer algún cambio en los datos de la empresa?,
+              ¡Hazlo!, las modificaciones que hagas las verás reflejadas en el
+              sistema de manera automática
+            </p>
+          </div>
+        </div>
+        <a href="caracteristicas.html" class="btn btn-lg btn-outline-light px-4">Leer más</a>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,192L60,165.3C120,139,240,85,360,96C480,107,600,181,720,197.3C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- /.modulos -->
+
+  <section class="funciones">
+    <div class="container mb-5">
+      <h2 class="text-center display-2 mb-5">Funciones</h2>
+      <div class="row text-center text-sm-start g-3">
+        <div class="col-sm-6 col-md-3">
+          <div class="p-2 border text-center rounded shadow">
+            <span class="fa-stack mb-5 mt-2">
+              <i class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-success"></i>
+              <i class="stacked-icon stack-1 mt-3 fas fa-file-invoice-dollar fa-stack-2x text-success"></i>
+            </span>
+            <h4>Facturación</h4>
+            <p>
+              Crea, registra, lista y administra el facturado de manera eficiente
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="p-2 text-center border rounded shadow">
+            <spa class="fa-stack mb-5 mt-2">
+              <i class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-warning"></i>
+              <i class="stacked-icon stack-1 mt-3 fas fa-dollar-sign text-warning"></i>
+            </spa>
+            <h4>Compras</h4>
+            <p>
+              Mantén un registro de las compras de productos que hagas para tu
+              empresa o tienda
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="p-2 text-center border rounded shadow">
+            <span class="fa-stack mb-5 mt-2">
+              <i class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-warning"></i>
+              <i class="stacked-icon stack-1 mt-3 fas fa-boxes fa-stack-2x text-brown"></i>
+            </span>
+            <h4>Almacén</h4>
+            <p>
+              Agrega los almacenes que poseas y elige si el producto está a la
+              venta o no.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="p-2 text-center border rounded shadow">
+            <span class="fa-stack mb-5 mt-2">
+              <i class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-warning"></i>
+              <i class="stacked-icon stack-1 mt-3 fas fa-clipboard-list fa-stack-2x"></i>
+            </span>
+
+            <h4>Inventario</h4>
+            <p>
+              Con el listado de productos puedes manejar las existencias de
+              una mejor manera
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="p-2 text-center border rounded shadow">
+            <span class="fa-stack mb-5 mt-2">
+              <i class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-success"></i>
+              <i class="stacked-icon stack-1 mt-3 fas fa-cash-register fa-stack-2x text-success"></i>
+            </span>
+            <h4>POS</h4>
+            <p>
+              Facturación en puntos de venta y gestionamiento de ventas,
+              devoluciones y retiros de caja
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="p-2 text-center border rounded shadow">
+            <span class="fa-stack mb-5 mt-2">
+              <i class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-danger"></i>
+              <i class="stacked-icon stack-1 mt-3 fas fa-chart-bar fa-stack-2x"></i>
+            </span>
+            <h4>Reportes</h4>
+            <p>
+              Genera reportes de manera sencilla para analizarlos, pudiendo
+              exportarlos para luego ser impresos
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="p-2 text-center border rounded shadow">
+            <span class="fa-stack ms-4 justify-content-center align-items-center bg-5 mt-2 me-2 float-start">
+              <i class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-success"></i>
+              <i class="stacked-icon stack-1 mt-3 fas fa-file-excel text-success mb-2"></i>
+            </span>
+            <span class="fa-stack mb-5 bg-5 mt-2">
+              <i class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-danger"></i>
+              <i class="stacked-icon stack-1 mt-3 fas fa-file-pdf text-danger mb-2"></i>
+            </span>
+            <h4>Exportar datos</h4>
+            <p>
+              Exporta mayoria de reportes, notas fiscales o cierres de caja a
+              Excel o PDF, incluso, el listado de inventario
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="p-2 text-center border rounded shadow">
+            <span class="fa-stack mb-5 bg-5 mt-2 ms-4">
+              <i class="stacked-icon stack-2 ms-2 fas fa-circle fa-stack-1x text-success"></i>
+              <img class="stack-image mb-2 mt-3" src="imgs/cash-refund.png" alt="refund icon" />
+            </span>
+
+            <h4>Devoluciones</h4>
+            <p>
+              Manten registros sobre las devoluciones de productos junto a la
+              razón de la devolución
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-lg btn-outline-success my-4">Conoce más</button>
+      </div>
+    </div>
+  </section>
+  <!-- /.funciones -->
+
+  <!-- CONTÁCTANOS -->
+  <section class="contactanos">
+    <div class="container col-8 border border-success text-center shadow p-4">
+      <h2>Contacto</h2>
+      <p class="lead">
+        Puedes ponerte en contacto con nosotros y responderemos tus preguntas
+        acerca de POS en el menor tiempo posible
+      </p>
+      <div class="row g-2 pb-3">
+        <div class="col-md-4">
+          <div class="card border-0">
+            <div class="card-body">
+              <i class="fas fa-envelope fa-3x mb-4 text-primary"></i>
+              <h4>Correo</h4>
+              <p class="lead">anibal@strix.com.ve</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0">
+            <div class="card-body">
+              <i class="fas fa-map-marked-alt fa-3x mb-4 text-success"></i>
+              <h4>Dirección</h4>
+              <p class="lead">
+                1<sup>ra</sup> Av. de los Palos Grandes con Av. Fco. de Miranda, Edif Quinora Torre A piso
+                1, Ofic
+                15-A
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0">
+            <div class="card-body">
+              <i class="fas fa-phone fa-3x mb-4"></i>
+              <h4>Teléfono</h4>
+              <p class="lead">+58 212-285-6661</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.contactanos -->
+
+  <!-- Footer -->
+  <footer class="bg-success mt-5">
+    <div class="container text-center text-light">
+      <p class="footer-text">
+        COPYRIGHT © STRIX Technologies 2021
+        <i class="mx-1 fab fa-hotjar"></i>
+        <i class="mx-1 fab fa-gitkraken"></i>
+        <i class="mx-1 fab fa-facebook"></i>
+        <i class="mx-1 fab fa-instagram"></i>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/763ddbc7c4.js" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
